@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,5 +7,61 @@
 }
 
 :root{
-    
+    --cor-online: rgba(199, 201, 204, 1);
+    --cor-pergNume: rgba(197, 141, 231, 1);
+    --cor-respostasSubtitulos: rgba(199, 201, 204, 1);
+    --cor-botao: rgba(36, 34, 46, 1);
+    --fonte-numbers: "Sora", sans-serif;
+    --fonte-titulo: "Roboto Mono", monospace;
+    --fonte-textos: "Roboto Flex", sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #000000, #0e0e0e);
+    color: white;
+    font-family: var(--fonte-textos);
+}
+
+h1{
+    font-family: var(--fonte-numbers);
+    text-transform: uppercase;
+}
+
+.online-gratuito{
+    text-transform: uppercase;
+    color: var(--cor-online);
+}
+
+h2{
+    color: var(--cor-pergNume);
+    font-family: var(--fonte-textos);
+    font-weight: normal;
+}
+
+p{
+    color: var(--cor-respostasSubtitulos);
+}
+
+label{
+    text-transform: uppercase;
+    color: var(--cor-respostasSubtitulos);
+    font-weight: bold;
+}
+
+div.switch label{
+    font-weight: normal;
+    text-transform: none;
+    color: white;
+}
+
+button{
+    background-color: var(--cor-botao);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+}
+.resultado{
+    display: none;
 }
