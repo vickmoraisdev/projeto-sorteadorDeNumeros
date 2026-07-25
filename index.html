@@ -7,10 +7,72 @@
     <title>Sorteador de Números</title>
 </head>
 <body>
-    <header>
-        
-    </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <section class="left">
+            <header>
+                <img src="img/Frame 48095955.png" alt="Logo">
+                <h1>Numbers</h1>
+            </header>
+            
+            <div class="apresentacao">
+                <p>Online - Gratuito</p>
+                <h1>Sorteador de Números</h1>
+            </div>
+
+            <div class="perguntas">
+                <h2>Como funciona o sorteador de números?</h2>
+                <p>
+                    O sorteador utiliza um algoritmo de geração 
+                    aleatória para criar números dentro do intervalo 
+                    especificado pelo usuário.
+                </p>
+                
+                <h2>Posso escolher o intervalo dos números?</h2>
+                <p>
+                    Sim, você pode definir os valores mínimo e máximo 
+                    para o intervalo dos números sorteados.
+                </p>
+            </div>
+        </section>
+
+        <section class="right">
+            <div class="descricao">
+                <h2>Quero sortear:</h2>
+                <p>
+                    defina o intervalo e a quantidade de números, 
+                    clique em "Sortear" e veja os resultados na tela. 
+                    É rápido e fácil!
+                </p>
+            </div>
+
+            <form>
+                <div class="inputs">
+                    <div class="campo">
+                        <label for="numero">Números</label>
+                        <input type="number" name="numero" id="numero">
+                    </div>
+
+                    <div class="campo">
+                        <label for="de">De</label>
+                        <input type="number" name="de" id="de">
+                    </div>
+
+                    <div class="campo">
+                        <label for="ate">Até</label>
+                        <input type="number" name="ate" id="ate">
+                    </div>
+                </div>
+
+                <div class="switch">
+                    <input type="checkbox" name="repetir" id="repetir">
+                    <label for="repetir">Não repetir número</label>
+                </div>
+
+                <button type="submit" class="btn-sortear">
+                        Sortear →
+                </button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
